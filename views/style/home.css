@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.products {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 5px solid gold;
+    color: rgba(255, 215, 0, 0.85);
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+form {
+    margin-top: 10px;
+}
+
+input {
+    background: rgba(255, 215, 0, 0.85);
+    color: rgba(0, 0, 0, 0.8);
+    border: 10px rgba(255, 215, 0, 0.85);
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 8px;
+    margin: 5px 0;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    background: rgba(255, 215, 0, 0.85);
+    color: rgba(0, 0, 0, 0.8);
+    border: 10px rgba(255, 215, 0, 0.85);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a.button:hover {
+    background-color: grey;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: grey;
+}

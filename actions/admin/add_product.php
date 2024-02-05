@@ -1,0 +1,14 @@
+<?php
+require_once '../../connessione/Database.php';
+require_once '../../models/Product.php';
+
+$product = Product::Create($_POST);
+try {
+    if (!$product) {
+        throw new Exception("Impossibile aggiungere il prodotto al listino");
+    }
+} catch (Exception $e) {
+    echo $e->getMessage();
+    exit();
+}
+header("Location: http://localhost:63342/E-Commerce_V2/views/products/index.php");
