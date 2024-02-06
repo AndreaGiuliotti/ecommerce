@@ -5,8 +5,8 @@ require_once '../models/Session.php';
 
 session_start();
 if ($_GET['email']) {
-    $email = urldecode($_GET['email']);
-    $password = urldecode($_GET['password']);
+    $email = $_GET['email'];
+    $password = $_GET['password'];
 } else {
     $email = $_POST['email'];
     $password = hash('sha256', $_POST['password']);
