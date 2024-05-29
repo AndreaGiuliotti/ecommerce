@@ -21,18 +21,18 @@ $user = $stmt->fetchObject("User");
 
 if ($user)//email già esistente
 {
-    header('Location:http://localhost:63342/E-Commerce_V2/views/login.php');
+    header('Location:http://localhost:63342/ecommerce/views/login.php');
     exit;
 }
 
 if (strcmp($password, $password_confirmation) != 0) { //password e conferma password non coincidono
-    header('Location:http://localhost:63342/E-Commerce_V2/views/signup.php');
+    header('Location:http://localhost:63342/ecommerce/views/signup.php');
     exit;
 }
 
 $params = array('email' => $email, 'password' => $password);
 $user = User::Create($params);
 $cart = Cart::Create($user);
-header("Location: http://localhost:63342/E-Commerce_V2/actions/login.php?email=" . urlencode($email) . "&password=" . urlencode($password));
+header("Location: http://localhost:63342/ecommerce/actions/login.php?email=" . urlencode($email) . "&password=" . urlencode($password));
 
 exit();
