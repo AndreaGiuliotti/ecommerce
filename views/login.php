@@ -15,9 +15,6 @@
         <input type="password" name="password" placeholder="Password" required>
         <input type="submit" value="Entra">
     </form>
-    <a href="http://localhost:63342/E-Commerce_V2/views/products/index.php">
-        <button type="button">Continua senza autenticazione</button>
-    </a>
 </div>
 </body>
 </html>
