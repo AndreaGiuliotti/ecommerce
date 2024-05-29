@@ -21,7 +21,7 @@ $user = $stmt->fetchObject("User");
 
 if ($user)//email già esistente
 {
-    header('Location:http://localhost:63342/ecommerce/views/login.php');
+    header('Location:http://localhost/ecommerce/views/login.php');
     exit;
 }
 
@@ -33,6 +33,6 @@ if (strcmp($password, $password_confirmation) != 0) { //password e conferma pass
 $params = array('email' => $email, 'password' => $password);
 $user = User::Create($params);
 $cart = Cart::Create($user);
-header("Location: http://localhost:63342/ecommerce/actions/login.php?email=" . urlencode($email) . "&password=" . urlencode($password));
+header("Location: http://localhost/ecommerce/actions/login.php?email=" . urlencode($email) . "&password=" . urlencode($password));
 
 exit();
