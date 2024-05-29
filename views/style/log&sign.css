@@ -18,7 +18,7 @@ form {
     width: 300px;
 }
 
-input, button {
+input {
     background: rgba(255, 215, 0, 0.85);
     color: rgba(0, 0, 0, 0.8);
     width: 100%;
