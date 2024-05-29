@@ -64,11 +64,11 @@
         <label><?php echo "Utente: " . $_SESSION['current_user']->getEmail(); ?></label>
         <?php
         if ($_SESSION['current_user']->getRoleId() == 2) {
-            ?> <a class="button" href="http://localhost:63342/ecommerce/views/admin/index.php">Admin</a>
+            ?> <a class="button" href="http://localhost/ecommerce/views/admin/index.php">Admin</a>
             <?php
         }
     } else { ?>
-        <a class="button" href="http://localhost:63342/ecommerce/views/login.php">Login</a>
+        <a class="button" href="http://localhost/ecommerce/views/login.php">Login</a>
     <?php } ?>
 
 </div>
