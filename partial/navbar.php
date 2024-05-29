@@ -57,7 +57,7 @@
 </head>
 <body>
 <div class="navbar">
-    <a class="button" href="http://localhost:63342/ecommerce/views/products/index.php">Home</a>
+    <a class="button" href="http://localhost/ecommerce/views/products/index.php">Home</a>
     <?php
     if (!empty($_SESSION['current_user'])) { ?>
         <a class="button" href="http://localhost:63342/ecommerce/actions/logout.php">Logout</a>
