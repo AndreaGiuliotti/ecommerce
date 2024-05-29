@@ -45,7 +45,7 @@ if (empty($_SESSION['current_user']) || $_SESSION['current_user']->getRoleId() =
             </ul>
         </form>
     <?php } ?>
-    <a class="button" href="http://localhost:63342/E-Commerce_V2/views/admin/add_product.php">Aggiungi prodotto</a>
+    <a class="button" href="http://localhost:63342/ecommerce/views/admin/add_product.php">Aggiungi prodotto</a>
 </div>
 </body>
 </html>
