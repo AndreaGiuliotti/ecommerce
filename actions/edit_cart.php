@@ -22,5 +22,5 @@ if ($quantita > 0) {
     $itemline->delete();
 }
 
-header('Location: http://localhost:63342/E-Commerce_V2/views/products/view_cart.php');
+header('Location: http://localhost:63342/ecommerce/views/products/view_cart.php');
 exit;
