@@ -57,18 +57,18 @@
 </head>
 <body>
 <div class="navbar">
-    <a class="button" href="http://localhost:63342/E-Commerce_V2/views/products/index.php">Home</a>
+    <a class="button" href="http://localhost:63342/ecommerce/views/products/index.php">Home</a>
     <?php
     if (!empty($_SESSION['current_user'])) { ?>
-        <a class="button" href="http://localhost:63342/E-Commerce_V2/actions/logout.php">Logout</a>
+        <a class="button" href="http://localhost:63342/ecommerce/actions/logout.php">Logout</a>
         <label><?php echo "Utente: " . $_SESSION['current_user']->getEmail(); ?></label>
         <?php
         if ($_SESSION['current_user']->getRoleId() == 2) {
-            ?> <a class="button" href="http://localhost:63342/E-Commerce_V2/views/admin/index.php">Admin</a>
+            ?> <a class="button" href="http://localhost:63342/ecommerce/views/admin/index.php">Admin</a>
             <?php
         }
     } else { ?>
-        <a class="button" href="http://localhost:63342/E-Commerce_V2/views/login.php">Login</a>
+        <a class="button" href="http://localhost:63342/ecommerce/views/login.php">Login</a>
     <?php } ?>
 
 </div>
