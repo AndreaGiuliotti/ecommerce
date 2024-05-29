@@ -13,4 +13,4 @@ try {
     echo $e->getMessage();
     exit();
 }
-header("Location: http://localhost:63342/E-Commerce_V2/views/products/index.php");
+header("Location: http://localhost:63342/ecommerce/views/products/index.php");
